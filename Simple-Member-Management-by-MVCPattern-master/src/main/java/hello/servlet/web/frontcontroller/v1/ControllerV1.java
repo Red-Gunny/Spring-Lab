@@ -1,0 +1,17 @@
+package hello.servlet.web.frontcontroller.v1;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+/*
+
+    이건 그냥 컨트롤러
+    
+    여러 프론트 컨트롤러가 얘 의존하면서 이것저것 고고 하게끔
+ */
+public interface ControllerV1 {
+    void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+    // 
+}
